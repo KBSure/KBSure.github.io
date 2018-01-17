@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1000px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.relative1 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.relative1 .relative2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.relative1 .relative2 .static {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: yellow;
+}
+
+.relative1 .relative2 .static .absolute {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  left: -50px;
+  top: 0;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WIRED</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="main-header">
+      <div class="header-top">
+        <!-- 자식 요소를 수직중앙 정렬하기 위해 middle-parent클래스 추가 -->
+        <div class="header-top-left middle-parent">
+          <!-- 클릭 할 수 있는 요소는 a태그로 감쌈 -->
+          <!-- a요소 자체가 수직중앙정렬 되기 위해 middle-childe클래스 추가 -->
+          <a href="" class="menu middle-child">
+            <img src="images/ui-menu-black.svg" alt="">
+          </a>
+        </div>
+        <div class="header-top-center middle-parent">
+          <a href="" class="logo middle-child">
+            <img src="images/logo-black.svg" alt="">
+          </a>
+        </div>
+        <div class="header-top-right middle-parent">
+          <a href="" class="subscribe middle-child">SUBSCRIBE</a>
+          <a href="" class="search middle-child">
+            <img src="images/ui-search-black.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="header-nav clearfix">
+        <ul>
+          <li>BUISNESS</li>
+          <li>CULTURE</li>
+          <li>DESIGN</li>
+          <li>GEAR</li>
+          <li>SCIENCE</li>
+          <li>SECURITY</li>
+          <li>TRANSPORTATION</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 가로 932px로 고정, 좌우 여백 자동 -->
+    <!-- header, footer를 제외한 전체 내용 -->
+    <div class="main clearfix">
+      <section class="popular clearfix">
+        <div class="popular-left">
+          <div class="row1 clearfix">
+            <!-- row1의 col1, col2가 각각 60%, 40%를 차지하도록 배치 -->
+            <div class="col1 card">
+              <img src="images/row1col1.jpg" alt="">
+              <div class="topic">HACK BRIEF</div>
+              <div class="title">Russian Hackers Release Apparent IOC Emails in Wake of Ban</div>
+              <div class="author">LOUISE MATSAKIS</div>
+            </div>
+            <div class="col2 card">
+              <img src="images/row1col2.jpg" alt="">
+              <div class="topic">Grounded</div>
+              <div class="title">Inside the 4-Day Disaster that Nearly Broke JFK Airport</div>
+              <div class="author">Alex Davies</div>
+            </div>
+          </div>
+          <div class="row2 clearfix">
+            <div class="col1">
+              <div class="row1 card right-image">
+                <img src="images/row2col1row1.jpg" alt="">
+                <div class="topic">INTERNET CULTURE</div>
+                <div class="title">Meme’s Best Friend: The Rise of 'Doggo'</div>
+                <div class="author">AUTHOR: ANDREA VALDEZANDREA VALDEZ</div>
+              </div>
+              <div class="row2 card left-image">
+                <img src="images/row2col1row2.jpg" alt="">
+                <div class="topic">CES 2018</div>
+                <div class="title">The Future of TV Is Just Screens All The Way Down</div>
+                <div class="author">AUTHOR: DAVID PIERCEDAVID PIERCE</div>
+              </div>
+            </div>
+            <div class="col2 card">
+              <div class="topic">DIVERSITY</div>
+              <div class="title">JAMES DAMORE'S LAWSUIT IS DESIGNED TO EMBARRASS GOOGLE</div>
+              <div class="author">AUTHOR: NITASHA TIKUNITASHA TIKU</div>
+            </div>
+          </div>
+          <div class="row3 clearfix"></div>
+        </div>
+        <div class="popular-right card bold-top">
+          <h2 class="card-ul-title">MOST POPULAR</h2>
+          <ul>
+            <li>
+              <img src="images/popular_1.jpg" alt="">
+              <div class="topic">SCIENCE</div>
+              <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptate quaerat sapiente optio consequuntur, perspiciatis provident beatae, dolorem praesentium explicabo dicta. Placeat ex hic totam magnam incidunt neque repellendus dignissimos doloribus est dolor suscipit eligendi, aliquid non rerum quisquam rem minus culpa aliquam cum, perferendis unde voluptas soluta. Sed, cumque.</div>
+              <!-- <div class="title">Scientists Discover Clean Water Ice Just Below Mars' Surface</div> -->
+              <div class="author">AUTHOR: ROBBIE GONZALEZROBBIE GONZALEZ</div>
+            </li>
+            <li>
+              <img src="images/popular_2.jpg" alt="">
+              <div class="topic">BUSINESS</div>
+              <div class="title">Softwear: How Outlier, the Underground Fashion Label for Nerds, Got Cool</div>
+              <div class="author">AUTHOR: ADAM ROGERSADAM ROGERS</div>
+            </li>
+            <li>
+              <img src="images/popular_3.jpg" alt="">
+              <div class="topic">BUSINESS</div>
+              <div class="title">When It Comes to Gorillas, Google Photos Remains Blind</div>
+              <div class="author">AUTHOR: TOM SIMONITETOM SIMONITE</div>
+            </li>
+          </ul>
+          <a href="" class="more">
+            <img src="images/ui-next-round-black.svg" alt="" class="arrow">
+            <span>More Stories</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="last-videos">
+        <div class="card bold-top">
+          <div class="title-container">
+            <h2 class="card-title">Latest videos</h2>
+            <a href="" class="more">
+              <img src="images/ui-next-round-black.svg" alt="" class="arrow">
+              <span>More videos</span>
+            </a>
+          </div>
+          <div class="content clearfix">
+            <div class="video-left">
+              <video loop="" muted="" preload="none" webkit-playsinline="" playsinline="" poster="https://dcdcsl55x0411.cloudfront.net/5a5013df148bb0688d000029/posters/animation_still.jpg" controls><source src="https://dcdcsl55x0411.cloudfront.net/5a5013df148bb0688d000029/animation-low.mp4" type="video/mp4"></video>
+                <div class="topic">GADGETS</div>
+                <div class="title">CES 2018: Take a Simulated Ride in The Air Taxi of The Future</div>
+                <div class="author">While engineers figure out how to make flying cars a reality, Bell Helicopter is pushing ahead with the design for the interior of an urban air-taxi service. We try out the concept at CES 2018.</div>
+              </div>
+            <div class="video-right">
+
+              <ul>
+                <li>
+                  <img src="images/video_1.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_2.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_3.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_4.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_5.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_1.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_2.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_3.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_4.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+                <li>
+                  <img src="images/video_5.jpg" alt="">
+                  <div class="topic"></div>
+                  <div class="title"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="main-footer">
+      <div class="img-container">
+        <img src="images/logo-black.svg" alt="" class="">
+      </div>
+      <div class="social-container">
+        <img src="images/social-facebook-square-blue.svg" alt="">
+        <img src="images/social-instagram-square-blue.svg" alt="">
+        <img src="images/social-pinterest-square-red.svg" alt="">
+        <img src="images/social-twitter-square-blue.svg" alt="">
+        <img src="images/social-youtube-square-red.svg" alt="">
+      </div>
+      <ul class="footer-link-list clearfix">
+        <li class="footer-link"><a to="https://accounts.wired.com?redirect_to=https%3A%2F%2Fwww.wired.com%2F%3Foutput%3Djson%2F" href="https://accounts.wired.com?redirect_to=https%3A%2F%2Fwww.wired.com%2F%3Foutput%3Djson%2F">Login</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/subscribe/" href="https://www.wired.com/subscribe/">Subscribe</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/wired-advertising/" href="https://www.wired.com/wired-advertising/">Advertise</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/sitemap/" href="https://www.wired.com/sitemap/">Site Map</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/press/" href="https://www.wired.com/about/press/">Press Center</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/faq/" href="https://www.wired.com/about/faq/">FAQ</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/accessibility-help/" href="https://www.wired.com/about/accessibility-help/">Accessibility Help</a></li>
+        <li class="footer-link"><a to="https://subscriptions.wired.com/pubs/N3/WIR/Register.jsp?cds_page_id=175371&amp;amp;cds_mag_code=WIR&amp;amp;id=1423757547774&amp;amp;lsid=50431012277019467&amp;amp;vid=1" href="https://subscriptions.wired.com/pubs/N3/WIR/Register.jsp?cds_page_id=175371&amp;amp;cds_mag_code=WIR&amp;amp;id=1423757547774&amp;amp;lsid=50431012277019467&amp;amp;vid=1">Customer Care</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/feedback/" href="https://www.wired.com/about/feedback/">Contact Us</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/securedrop/" href="https://www.wired.com/securedrop/">Securedrop</a></li>
+        <li class="footer-link"><a to="https://subscribe.wired.com/subscribe/wired/109426?source=NativeFooter" href="https://subscribe.wired.com/subscribe/wired/109426?source=NativeFooter">T-Shirt Collection</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/services/newsletters/demographics/" href="https://www.wired.com/services/newsletters/demographics/">Newsletter</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/wired-staff/" href="https://www.wired.com/wired-staff/">Wired Staff</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/wired-jobs/" href="https://www.wired.com/about/wired-jobs/">Jobs</a></li>
+        <li class="footer-link"><a to="https://www.wired.com/about/rss_feeds/" href="https://www.wired.com/about/rss_feeds/">RSS</a></li>
+      </ul>
+
+      <p class="policy-title">CNMN Collection</p>
+      <p class="policy-content">Use of this site constitutes acceptance of our user agreement (effective 3/21/12) and privacy policy (effective 3/21/12). Affiliate link policy. Your California privacy rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast.</p>
+    </footer>
+  </div>
+</body>
+</html>

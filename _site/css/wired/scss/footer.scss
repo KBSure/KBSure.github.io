@@ -1,0 +1,73 @@
+$main-footer-big-margin: 32px;
+$main-footer-small-margin: 8px;
+$main-footer-small-padding: 8px;
+
+.main-footer{
+  background-color: #fff;
+  box-shadow: -3px -3px 3px 0 rgba(0,0,0,0.19), 3px 0 3px 0 rgba(0,0,0,0.19), 0 3px 3px 0 rgba(0,0,0,0.23);
+  padding: 30px 0;
+  & > * {
+    text-align: center;
+    a{
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+
+  > .img-container{
+    margin-bottom: $main-footer-big-margin;
+
+    > img {
+      width: 150px;
+      height: 32px;
+    }
+  }
+  > .social-container{
+    margin-bottom: $main-footer-big-margin;
+    > img {
+      margin-right:10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  > ul.footer-link-list{
+
+    max-width: 1230px;
+    width: calc(100% - (50px * 2));
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: $main-footer-big-margin;
+    // display: block;
+    // -webkit-margin-before: 1em;
+    // -webkit-margin-after: 1em;
+    // -webkit-margin-start: 0px;
+    // -webkit-margin-end: 0px;
+    // -webkit-padding-start: 40px;
+    > li {
+      font-size: 10px;
+      display:inline-block;
+      border-right: 1px solid #ccc;
+      // float:left;
+      padding: 0 $main-footer-small-padding;
+    }
+
+    > li:last-child {
+      border-right: none;
+    }
+  }
+
+  >p.policy-title {
+    margin-bottom: $main-footer-small-margin;
+    color: #666;
+  }
+
+  >p.policy-content{
+    line-height:20px;
+    max-width: 932px;
+    margin: 0 auto $main-footer-small-margin;
+    color: #666;
+    
+  }
+
+
+}

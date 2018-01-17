@@ -1,0 +1,226 @@
+@import 'variables';
+$card-margin: 16px;
+$font-size-big-card-title: 24px;
+
+#wrap{
+  background-color: #f6f6f6;
+}
+.main {
+  max-width: 932px;
+  margin: $card-margin auto 0;
+  padding-bottom: 60px;
+}
+
+.main .card {
+  // 그림자 효과
+  box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
+  // 카드의 내부 패딩
+  padding: 16px;
+  // 내부 패딩과 보더를 포함한 가로/세로크기를 갖도록 함
+  box-sizing: border-box;
+  // 상단 3픽셀 검정 외곽선
+  border-top: 3px solid #000;
+  margin: 0 16px 16px 0;
+
+  @media screen and (max-width:600px){
+    width: 100% !important;
+
+  }
+
+  img {
+    width: 100%;
+  }
+  .topic {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 18px;
+    font-family: 'Futura';
+    line-height: 1.2;
+  }
+  .author {
+    font-size: 10px;
+  }
+
+  // 굵은 border-top이 필요한 경우
+  &.bold-top {
+    border-top-width: 10px;
+  }
+
+  // 이미지가 오른쪽에 있는 카드의 경우
+  &.right-image {
+    height: 160px;
+
+    & img {
+      width: inherit;
+      height: 100%;
+      float: right;
+    }
+  }
+
+  &.left-image {
+    height: 160px;
+
+    // 이미지가 좌측일 경우
+    // 제목이 세로로 너무 길어지지 않도록 max-height지정
+    .title {
+      max-height: 86px;
+      overflow: hidden;
+    }
+
+    & img {
+      max-width: 50%;
+      max-height: 100%;
+      margin-right: 10px;
+      float: left;
+    }
+    &:hover{
+
+    }
+  }
+}
+a.more {
+  // 자식요소들의 높이를 자신의 높이로 갖기 위해
+  // inline-block설정
+  display: inline-block;
+  padding: 16px;
+
+  // 모든 자식들(인라인 요소)간의 정렬은 수직 중앙 정렬
+  > * {
+    vertical-align: middle;
+  }
+
+  img.arrow {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+}
+
+.main > section.popular {
+  > .popular-left {
+    width: 632px;
+    float: left;
+
+    > .row1 {
+      $col-height: 330px;
+      > .col1 {
+        // calc에 Sass변수를 쓸 때는 #{변수명}을 사용
+        width: calc(100% / 3 * 2 - #{$card-margin});
+        float: left;
+        height: $col-height;
+      }
+      > .col2 {
+        width: calc(100% / 3 - #{$card-margin});
+        float: left;
+        height: $col-height;
+      }
+    }
+    > .row2 {
+      > .col1 {
+        width: 50%;
+        float: left;
+      }
+      > .col2 {
+        width: calc(50% - #{$card-margin});
+        height: 336px;
+        float: left;
+      }
+    }
+    > .row3 {
+      height: 100px;
+      background-color: lightblue;
+    }
+  }
+  > .popular-right {
+    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    // 카드형태 요소 내부의 ul의 제목에 대한 스타일
+    h2.card-ul-title {
+      font-size: $font-size-big-card-title;
+      padding: 16px;
+      margin: 0;
+    }
+
+    > ul {
+      // 리스트 자체에는 좌우 패딩만
+      padding: 0 16px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+
+      > li {
+        border-bottom: 1px solid #ccc;
+        height: 75px;
+        // 리스트 아이템에는 상하 패딩만
+        padding: 16px 0;
+
+        // 리스트 하단에 border가 있으므로
+        // 마지막 자식은 border속성을 없앰
+        &:last-child {
+          border: none;
+        }
+
+        img {
+          float: left;
+          width: 75px;
+          height: 75px;
+          margin-right: 16px;
+        }
+        .title {
+          font-size: 13px;
+          @include max-line(3);
+        }
+        .author {
+          @include max-line(1);
+        }
+      }
+    }
+  }
+}
+.main > section.last-videos {
+  .card {
+    // .title-container의 하단에
+    // 전체 가로 길이만큼의 외곽선이 필요하므로
+    // 패딩을 없애고 자식요소에 각각 따로 패딩 지정
+    padding: 0;
+  }
+  .title-container {
+    padding: 16px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+
+    h2.card-title {
+      font-size: $font-size-big-card-title;
+      margin: 0;
+    }
+    a.more {
+      position: absolute;
+      top: 0;
+      right: 16px;
+    }
+  }
+  .content {
+    .video-left {
+      float: left;
+      width: 80%;
+      padding: 16px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+
+      video {
+        width: 100%;
+      }
+    }
+    .video-right {
+      float: left;
+      width: 20%;
+      padding: 16px;
+      height: 462px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+  }
+}

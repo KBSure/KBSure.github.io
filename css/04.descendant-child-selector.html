@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+
+  ul{
+    border: 1px solid black;
+  }
+  .descendant ul ul {
+    border: 1px solid black;
+  }
+  .child ul ul{
+    border: 0px solid black;nowrap
+  }
+  </style>
+</head>
+<body>
+
+  <h1>Section1</h1>
+
+  <div class="descendant">
+    <ul>
+      <li>Chapter1</li>
+      <li>Chapter2</li>
+      <li>Chapter3</li>
+      <li>
+        <ul>
+          <li>SubChapter3-1</li>
+          <li>SubChapter3-2</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <h1>Section1</h1>
+
+  <div class="child">
+    <ul>
+      <li>Chapter1</li>
+      <li>Chapter2</li>
+      <li>Chapter3</li>
+      <li>
+        <ul>
+          <li>SubChapter3-1</li>
+          <li>SubChapter3-2</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

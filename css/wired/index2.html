@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WIRED</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header-top">
+        <!-- 자식 요소를 수직중앙 정렬하기 위해 middle-parent클래스 추가 -->
+        <div class="header-top-left middle-parent">
+          <!-- 클릭 할 수 있는 요소는 a태그로 감쌈 -->
+          <!-- a요소 자체가 수직중앙정렬 되기 위해 middle-childe클래스 추가 -->
+          <a href="" class="menu middle-child">
+            <img src="images/ui-menu-black.svg" alt="">
+          </a>
+        </div>
+        <div class="header-top-center middle-parent">
+          <a href="" class="logo middle-child">
+            <img src="images/logo-black.svg" alt="">
+          </a>
+        </div>
+        <div class="header-top-right middle-parent">
+          <a href="" class="subscribe middle-child">SUBSCRIBE</a>
+          <a href="" class="search middle-child">
+            <img src="images/ui-search-black.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="header-nav clearfix">
+        <ul>
+          <li>BUISNESS</li>
+          <li>CULTURE</li>
+          <li>DESIGN</li>
+          <li>GEAR</li>
+          <li>SCIENCE</li>
+          <li>SECURITY</li>
+          <li>TRANSPORTATION</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 가로 932px로 고정, 좌우 여백 자동 -->
+    <!-- header, footer를 제외한 전체 내용 -->
+    <div class="main">
+      <section class="popular">
+        <div class="popular-left">
+          <div class="row1 clearfix">
+            <!-- row1의 col1, col2가 각각 60%, 40%를 차지하도록 배치 -->
+            <div class="col1 card">
+              <img src="images/row1col1.jpg" alt="">
+              <div class="topic">HACK BRIEF</div>
+              <div class="title">Russian Hackers Release Apparent IOC Emails in Wake of Ban</div>
+              <div class="author">LOUISE MATSAKIS</div>
+            </div>
+            <div class="col2 card">
+              <img src="images/row1col2.jpg" alt="">
+              <div class="topic">Grounded</div>
+              <div class="title">Inside the 4-Day Disaster that Nearly Broke JFK Airport</div>
+              <div class="author">Alex Davies</div>
+            </div>
+          </div>
+
+          <div class="row2 clearfix">
+            <div class="col1">
+              <div class="row1 card right-image">
+                <img src="images/row2col1row1.jpg" alt="">
+                <div class="topic">INTERNET CULTURE</div>
+                <div class="title">Meme’s Best Friend: The Rise of 'Doggo'</div>
+                <div class="author">ANDREA VALDEZ</div>
+              </div>
+              <div class="row2 card left-image">
+                <img src="images/row2col1row2.jpg" alt="">
+                <div class="topic">SPONSOR CONTENT</div>
+                <div class="title">The Future of TV Is Just Screens All The Way Down</div>
+                <div class="author">JUNIPER</div>
+              </div>
+            </div>
+            <div class="col2 card left-image">
+              <div class="topic">DIVERSITY</div>
+              <div class="title">JAMES DAMORE'S LAWSUIT IS DESIGNED TO EMBARRASS GOOGLE</div>
+              <div class="author">NITASHA TIKU</div>
+            </div>
+          </div>
+          <div class="row3 card left-image clearfix">
+            <img src="images/row3.jpg" alt="">
+            <div class="topic">CES 2018</div>
+            <div class="title">Showstopping Gadgets From This Year's CES</div>
+            <div class="author">WIRED STAFFWIRED STAFF</div>
+          </div>
+        </div>
+        <div class="card popular-right">
+          <h2>MOST POPULAR</h2>
+          <ul>
+            <li class="">
+              <img src="images/list1.jpg" alt="">
+              <div class="topic">SCIENCE</div>
+              <div class="title">Scientists Discover Clean Water Ice Just Below Mars' Surface</div>
+              <div class="author">ROBBIE GONZALEZROBBIE GONZALEZ</div>
+            </li>
+            <li>
+              <img src="images/list2.jpg" alt="">
+              <div class="topic">BUSINESS</div>
+              <div class="title">Softwear: How Outlier, the Underground Fashion Label for Nerds, Got Cool</div>
+              <div class="author">ADAM ROGERSADAM ROGERS</div>
+            </li>
+            <li>
+              <img src="images/list3.jpg" alt="">
+              <div class="topic">CULTURE</div>
+              <div class="title">Where Did 'Doggo' Come From? Wouldn't You Like to Know, Fren</div>
+              <div class="author">ANDREA VALDEZANDREA VALDEZ</div>
+            </li>
+            <li>
+              <img src="images/list4.jpg" alt="">
+              <div class="topic">BUSINESS</div>
+              <div class="title">When It Comes to Gorillas, Google Photos Remains Blind</div>
+              <div class="author">TOM SIMONITETOM SIMONITE</div>
+            </li>
+            <li>
+              <img src="images/list5.jpg" alt="">
+              <div class="topic">SECURITY</div>
+              <div class="title">WhatsApp Encryption Security Flaws Could Allow Snoops to Slide Into Group Chats</div>
+              <div class="author">ANDY GREENBERGANDY GREENBERG</div>
+            </li>
+            <li>
+              <img src="images/list6.jpg" alt="">
+              <div class="topic">TRANSPORTATION</div>
+              <div class="title">How the Bomb Cyclone Nearly Broke JFK Airport</div>
+              <div class="author">ALEX DAVIESALEX DAVIES</div>
+            </li>
+          </ul>
+          <a href="" class="more">
+            <img src="images/ui-next-round-black.svg" alt="">
+          </a>
+          <span>More Stories</span>
+        </div>
+      </section>
+
+      <section class="last-videos">
+              <div class="card bold-top">
+                <div class="title-container">
+                  <h2 class="card-title">Latest videos</h2>
+                  <a href="" class="more">
+                    <img src="images/ui-next-round-black.svg" alt="" class="arrow">
+                    <span>More videos</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+    </div>
+  </div>
+</body>
+</html>

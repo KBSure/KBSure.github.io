@@ -1,0 +1,26 @@
+.float-frame{
+  width:300px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.float-frame::after{
+  content: 'a';
+  /* clear: both; */
+  display: block;
+  height:0;
+  /* 혹시나 해서 높이 0으로*/
+}
+.float-unit{
+  width: 50px;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 50px;
+  float:left;
+}
+
+/* 부모를 변화시키는 건 좋은 선택이 아님 */
